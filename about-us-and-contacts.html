@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>About Us and Conditions</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <meta name="theme-color" content="#fafafa">
+
+
+  <!-- TODO add minify versions -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      opacity: 1;
+      background-color: #000;
+      transition: opacity 0.8s, z-index 0.8s;
+    }
+
+    .preloader--hide {
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .preloader__status {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #222;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    .preloader__status::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #555;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+
+    .preloader__status::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #ccc;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <noscript>
+    <style>
+      .no-js .preloader {
+        display: none;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <div class="preloader">
+    <div class="preloader__status"></div>
+  </div>
+
+  <div class="default about-us-page about-us-page--d-flex">
+    <header class="header">
+      <!-- burger -->
+      <input class="burger-btn" type="checkbox" id="menu-btn" />
+      <label class="burger-icon-wrapper" for="menu-btn">
+        <span class="burger-icon"></span>
+      </label>
+      <!-- END burger -->
+      <div class="header__inner">
+        <a class="logo" href="/">GAMINUM</a>
+        <nav class="nav">
+          <a class="nav__link" href="/">Home</a>
+          <a class="nav__link" href="privacy-and-terms.html">Privacy & Terms</a>
+          <a class="nav__link nav__link--active" href="about-us-and-contacts.html">About Us &
+            Contacts</a>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper wrapper--flex">
+      <main class="about-us-page__main">
+        <div class="about-us-page__row">
+          <div class="about-us-page__column">
+            <h2 class="about-us-page__title">ABOUT US</h2>
+            <p class="about-us-page__col-txt">
+              We are developing mobile games for
+              iOS, Android, Amazon, Facebook and Windows platforms.e
+            </p>
+          </div>
+          <div class="about-us-page__column">
+            <h2 class="about-us-page__title">CONTACTS</h2>
+            <div class="about-us-page__contact">
+              <svg class="about-us-page__contact-icon" width="16" height="16" viewBox="0 0 16 16"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.82759 9.1432C10.7485 8.80119 12.2069 7.12263 12.2069 5.10345C12.2069 2.83718 10.3697 1 8.10345 1C5.83718 1 4 2.83718 4 5.10345C4 7.12263 5.45841 8.80119 7.37931 9.1432V14.2759C7.37931 14.6758 7.70352 15 8.10345 15C8.50338 15 8.82759 14.6758 8.82759 14.2759V9.1432ZM9.53207 3C9.53207 3.55228 8.89248 4 8.1035 4C7.31452 4 6.67493 3.55228 6.67493 3C6.67493 2.44772 7.31452 2 8.1035 2C8.89248 2 9.53207 2.44772 9.53207 3Z"
+                        fill="white" />
+                </g>
+              </svg>
+              <a class="about-us-page__contact-link" href="https://goo.gl/maps/xMFeCw4ypFTnqyxk9"
+                 target="_blank">Bulgaria, Sofia, Anton Chehov, 22, 1113</a>
+            </div> <!-- END about-us-page__contact 1 -->
+            <div class="about-us-page__contact">
+              <svg class="about-us-page__contact-icon" width="16" height="16" viewBox="0 0 16 16"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path d="M14.2472 11.8371L12.806 10.8762L11.5248 10.0223C11.2776 9.85776 10.9453 9.91169 10.7628 10.146L9.97002 11.1651C9.79973 11.3863 9.49339 11.4498 9.24919 11.3146C8.71127 11.0154 8.07517 10.7337 6.67164 9.32835C5.26811 7.92302 4.98458 7.28871 4.68536 6.7508C4.55015 6.50659 4.6137 6.20026 4.83485 6.02999L5.854 5.23723C6.08827 5.05472 6.14223 4.72244 5.97772 4.47516L5.15 3.23345L4.1629 1.75279C3.99489 1.50076 3.65857 1.4251 3.39883 1.58087L2.26043 2.26382C1.95277 2.44508 1.72662 2.73778 1.62882 3.08123C1.31751 4.21626 1.25474 6.72007 5.26743 10.7328C9.28012 14.7454 11.7837 14.6825 12.9187 14.3711C13.2622 14.2734 13.5549 14.0472 13.7361 13.7395L14.4191 12.6012C14.5749 12.3414 14.4992 12.0051 14.2472 11.8371Z"
+                        fill="white" />
+                </g>
+              </svg>
+              <a class="about-us-page__contact-link" href="tel:+359-897-054805">+359 897 054805</a>
+            </div> <!-- END about-us-page__contact 2 -->
+            <div class="about-us-page__contact">
+              <svg class="about-us-page__contact-icon" width="16" height="16" viewBox="0 0 16 16"
+                   fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3 4C2.44772 4 2 4.44772 2 5V5.10068L8.00004 9.30825L14 5.10074V5C14 4.44772 13.5523 4 13 4H3ZM14 6.09841L8.00004 10.2914L2 6.09835V11C2 11.5523 2.44772 12 3 12H13C13.5523 12 14 11.5523 14 11V6.09841Z"
+                        fill="white" />
+                </g>
+              </svg>
+
+              <a class="about-us-page__contact-link" href="mailto:info@gaminum.com"
+                 target="_blank">info@gaminum.com</a>
+            </div> <!-- END about-us-page__contact 3 -->
+          </div> <!-- END about-us-page__column -->
+        </div> <!-- END about-us-page__row-->
+
+
+      </main><!-- END main  -->
+    </div><!-- END wrapper  -->
+    <footer class="footer">
+      <span class="footer__copy">Copyright &copy; 2020 Gaminum Ltd. All rights reserved</span>
+    </footer>
+    <!--  END footer  -->
+  </div><!-- END main-page-->
+
+
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    window.onload = function () {
+      var htmlTag = document.querySelector(".no-js");
+      htmlTag.className = htmlTag.className.replace(/\bno-js\b/g, "");
+
+      // hide the preloader
+      var preloader = document.querySelector(".preloader")
+      preloader.classList.add("preloader--hide");
+
+      setTimeout(function () {
+        preloader.style.display = "none"
+      }, 2000);
+      // END hide the preloader
+    }
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>
